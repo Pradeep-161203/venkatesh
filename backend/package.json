@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "prod": "node server.js"
   },
   "keywords": ["rivets", "billing", "sri-venkateshwara"],
   "author": "Sri Venkateshwara Company",
