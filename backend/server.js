@@ -8,7 +8,9 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: '*',
+    origin: process.env.NODE_ENV === 'production' 
+        ? ['https://venkateshhh.netlify.app', 'https://www.venkateshhh.netlify.app']
+        : true,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
